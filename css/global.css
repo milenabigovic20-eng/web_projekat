@@ -1,0 +1,248 @@
+:root {
+    --htmlFontSize: 100%;
+
+    --bodyBackgroundColor: #191919;
+    --bodyColor: var(--baseColor);
+    --bodyFontFamily: "Open Sans";
+    --bodyFontFamilyFallback: sans-serif;
+    --bodyFontSize: 0.875rem;
+    --bodyFontWeight: 400;
+    --bodyLineHeight: 1.5;
+    --baseColor: #F1E8B8;
+    --iconFill: var(--baseColor);
+    --anchorColor: #eee;
+    --formGap: 0.875rem;
+}
+
+.align {
+    display: grid;
+    place-items: center;
+}
+
+.grid {
+    inline-size: 90%;
+    margin-inline: auto;
+    max-inline-size: 20rem;
+}
+
+.settings-title{
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.icons {
+    display: none;
+}
+
+.icon {
+    block-size: 1em;
+    display: inline-block;
+    fill: var(--iconFill);
+    inline-size: 1em;
+    vertical-align: middle;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: var(--htmlFontSize);
+}
+
+body {
+    background-color: var(--bodyBackgroundColor);
+    color: var(--bodyColor);
+    font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+    font-size: var(--bodyFontSize);
+    font-weight: var(--bodyFontWeight);
+    line-height: var(--bodyLineHeight);
+    margin: 0;
+    min-block-size: 100vh;
+}
+
+a {
+    color: var(--anchorColor);
+    outline: 0;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: underline;
+}
+
+input {
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+.form {
+    display: grid;
+    gap: var(--formGap);
+}
+
+.form input[type="password"],
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="submit"] {
+    inline-size: 100%;
+}
+
+.form__field {
+    display: flex;
+}
+
+.form__input {
+    flex: 1;
+}
+
+
+
+p {
+    margin-block: 1.5rem;
+}
+
+.text--center {
+    text-align: center;
+    font-family: var(--bodyFontFamily);
+}
+
+.logo-set {
+    margin-bottom: 1rem;
+    background-color: #fce69d;
+    border-radius: 15rem;
+    text-align: center;
+    height: 17rem;
+}
+
+.logo-set img {
+    height: 15rem;
+    width: auto;
+    margin-top: 1rem;
+    border-radius: 50%;
+}
+
+
+.logo img:hover {
+    transform: rotate(720deg);
+}
+
+.db-users {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 3rem;
+}
+
+.db-users td{
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+}
+#message,
+#dashboard {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 3rem 3rem;
+}
+
+#message{
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 1.5rem;
+    font-family: var(--bodyFontFamily);
+}
+
+#table_db{
+    background-color: #8d8c88;
+    color: #363b41;
+    border-radius: 1rem;
+    width: 50%;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.select-box{
+    padding: 0.9rem;
+    width: 7rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #D05353;
+    border: none;
+    color: #edebe1;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#privilegeSelected{
+    padding: 0.9rem;
+    width: 10rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #574f4f;
+    border: none;
+    color: #edebe1;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+#privilegeSelected:hover{
+    background-color: #d47979;
+    transition: background-color 0.3s;
+}
+
+
+#colored{
+    color: #F1E8B8;
+}
+
+#search_result a,
+.main_container a{
+    color: #d47979;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#search_result a:hover,
+.main_container a:hover{
+    color: #D05353;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-style {
+    text-align: center;
+}
+
+.menu-table{
+    display: flex;
+    justify-content: center;
+}

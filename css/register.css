@@ -1,0 +1,63 @@
+
+:root {
+    --loginBorderRadus: 0.25rem;
+    --loginColor: #191919;
+
+    --loginInputBackgroundColor: #F1E8B8;
+    --loginInputHoverBackgroundColor: #edebe1;
+
+    --loginLabelBackgroundColor: #363b41;
+
+    --loginSubmitBackgroundColor: #D05353;
+    --loginSubmitColor: #eee;
+    --loginSubmitHoverBackgroundColor: #d47979;
+}
+
+.register {
+    color: var(--loginColor);
+}
+
+.register label,
+.register input[type="text"],
+.register input[type="password"],
+.register input[type="email"],
+.register input[type="submit"] {
+    border-radius: var(--loginBorderRadus);
+    padding: 1rem;
+}
+
+.register label {
+    background-color: var(--loginLabelBackgroundColor);
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding-inline: 1.25rem;
+}
+
+.register input[type="password"],
+.register input[type="email"],
+.register input[type="text"] {
+    background-color: var(--loginInputBackgroundColor);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.register input[type="password"]:focus,
+.register input[type="password"]:hover,
+.register input[type="email"]:focus,
+.register input[type="email"]:hover,
+.register input[type="text"]:focus,
+.register input[type="text"]:hover {
+    background-color: var(--loginInputHoverBackgroundColor);
+}
+
+.register input[type="submit"] {
+    background-color: var(--loginSubmitBackgroundColor);
+    color: var(--loginSubmitColor);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.register input[type="submit"]:focus,
+.register input[type="submit"]:hover {
+    background-color: var(--loginSubmitHoverBackgroundColor);
+}
