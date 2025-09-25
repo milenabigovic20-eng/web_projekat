@@ -34,7 +34,7 @@ if($result->num_rows > 0) {
     <link rel="stylesheet" href="css/main-page.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/login.css">
-    <link rel="icon" href="photos/foodZonelogo.png>
+    <link rel="icon" href="photos/foodZonelogo.png">
     <script src="js/profileIcon.js" defer></script>
     <script src="js/search.js"></script>
     <title>Food Zone</title>
