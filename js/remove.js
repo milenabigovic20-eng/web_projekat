@@ -13,8 +13,7 @@ $(document).ready(function() {
             data: data,
             success: function(result, status, xhr) {
                 if(result.status === 'success') {
-                    $(".main_container").remove()
-                    $(".landing").html(result.table)
+                    e.target.closest("tr").remove();
                 }
             },
             error: function(xhr, status, error) {
