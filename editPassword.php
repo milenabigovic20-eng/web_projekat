@@ -35,7 +35,7 @@ $id = $_GET['id'];
         <div class="form__field">
             <label for="new__password"><svg class="icon">
                     <use xlink:href="#icon-lock"></use>
-                </svg><span class="hidden">Username</span></label>
+                </svg><span class="hidden">New Password</span></label>
             <input autocomplete="username" id="password_one" type="password" name="password" class="form__input" placeholder="New Password">
         </div>
 
